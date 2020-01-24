@@ -39,10 +39,14 @@ class Controller extends BaseController
         // ]);
         return view ('labs');
     }
+    public function sala(){
+        return view('sala');
+    }
     public function usuario(){
         $nome       = $_GET['nome'];
         $endereco   = $_GET['endereco'];
         $dados      = [$nome, $endereco];
+        useradmin();
         return $dados;
     }
 }

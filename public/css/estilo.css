@@ -1,8 +1,11 @@
 .formatosi{
   background-color: #ECF0F5;
-   /* rgba(205, 206, 207, 0.548);  */
   color: black;
-  background-image: url ("public\\img\\EEufs.jpg"); 
+  background-image: url ("public\\img\\EEufs.jpg");
+
+}
+.encapsulamento{
+  text-align: justify; /*tudo que esta dentro do body*/
 }
 
 .vertical-menu {

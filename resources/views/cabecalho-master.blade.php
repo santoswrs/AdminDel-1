@@ -8,3 +8,4 @@
     <title>AdminDEL</title>
 </head>
 <body class="formatosi">
+    <div class="encapsulamento">
