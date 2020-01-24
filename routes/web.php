@@ -12,14 +12,7 @@
 */
 
 Route::get('/login',['uses' => 'Controller@login']);
-// Route::get('', function () {
-//     return view('welcome');
-// });
-// Route::get('/ola', function() {
-//     return view('saida');
-// });
+
 Route::get('labs',['uses' => 'Controller@labs']);
 
 Route::get('home',['uses' => 'Controller@homepage']);
-
-// Route::get('e',['uses' => '/Entidades@impressao']); //nao encontro o caminho

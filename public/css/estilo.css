@@ -1,4 +1,9 @@
-.formatosi{background-color: rgb(11, 15, 3); color: chartreuse;}
+.formatosi{
+  background-color: #ECF0F5;
+   /* rgba(205, 206, 207, 0.548);  */
+  color: black;
+  background-image: url ("public\\img\\EEufs.jpg"); 
+}
 
 .vertical-menu {
     width: 200px; /* comprimento da barra azul */

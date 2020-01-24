@@ -7,4 +7,4 @@
     <link rel="stylesheet" href="{{ asset( 'css/estilo.css') }}">
     <title>AdminDEL</title>
 </head>
-<body>
+<body class="formatosi">
