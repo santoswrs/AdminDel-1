@@ -1,0 +1,5 @@
+    @include('cabecalho-master')
+    @include('menu-login')
+    @include('menu-lateral')
+    @include('form-login')
+    @include('footer')
