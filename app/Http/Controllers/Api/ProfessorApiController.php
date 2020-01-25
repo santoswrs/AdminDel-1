@@ -13,5 +13,8 @@ Class ProfessorApiController extends \App\Http\Controllers\Controller {
     public function update(Request $request, $id){
         return '{"mensagem": "Efetuado com sucesso!!!"}';
     }
+    public function delete($id){
+        return \App\Entity\Professor::delete($id);
+    }
 
 }

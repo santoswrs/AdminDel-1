@@ -19,9 +19,10 @@ Route::get('labs',['uses' => 'Controller@labs']);
 Route::get('sala',['uses' => 'Controller@sala']);
 Route::group(['prefix' =>'/'], function(){
     Route::group(['prefix' => '/api'], function(){
-        Route::get('professor', 'Api\\ProfessorApiController@all');
-        Route::get('professor/{id}', 'Api\\ProfessorApiController@get');
-        Route::put('professor/{id}', 'Api\\ProfessorApiController@update');
+        Route::get      ('professor',       'Api\\ProfessorApiController@all');
+        Route::get      ('professor/{id}',  'Api\\ProfessorApiController@get');
+        Route::put      ('professor/{id}',  'Api\\ProfessorApiController@update');
+        Route::delete   ('professor/{id}',  'Api\\ProfessorApiController@delete');
 
     });
     Route::group(['prefix' => 'painel'], function(){

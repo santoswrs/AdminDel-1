@@ -1,8 +1,22 @@
 .formatosi{
   background-color: #ECF0F5;
   color: black;
-  background-image: url ("public\\img\\EEufs.jpg");
-
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+.insertImagem{
+  background-image: url('EEufs.jpg');
+  background-repeat: round;
+  background-size: 100%;
+  width: 1150px;
+  height: 168px;
+  float: right;
+  position: relative;
+  margin-top: -168px;
+  margin-right: -6px;
+}
+.fixador{
+  display: block;
 }
 .encapsulamento{
   text-align: justify; /*tudo que esta dentro do body*/
@@ -10,24 +24,24 @@
 
 .vertical-menu {
     width: 200px; /* comprimento da barra azul */
-  }
+}
   
-  .vertical-menu a {
-    background-color: #1A2226; /*  cor do fundo do menu  #eee*/
-    color: whitesmoke; /* cor da fonte */
-    display: block; /* fazer os links ficarem na vertical */
-    padding: 12px; /* padding interno que pode aumentar o tamanho do botao */
-    text-decoration: none; /* remove o underline dos links */
-  }
+.vertical-menu a {
+  background-color: #1A2226; /*  cor do fundo do menu  #eee*/
+  color: whitesmoke; /* cor da fonte */
+  display: block; /* fazer os links ficarem na vertical */
+  padding: 12px; /* padding interno que pode aumentar o tamanho do botao */
+  text-decoration: none; /* remove o underline dos links */
+}
   
-  .vertical-menu a:hover {
-    background-color: #3C8DBC; /* cor quando passa o mouse por cima */
-  }
-  
-  /* .vertical-menu a.active {
-    background-color: #1E282C;
-    color: white;
-  }  para teste */
+.vertical-menu a:hover {
+  background-color: #3C8DBC; /* mudanca da cor do elemento */
+}
+
+/* .vertical-menu a.active {
+  background-color: #1E282C;
+  color: white;
+}  para teste */
 
 .headerEntr {
     float: center;
@@ -37,23 +51,21 @@
     margin: 2px 0 2px 0;
     padding: 1%;
 }
-.aLogin a{
+.aLogin a{ /* Menu login superior */
+  color: white;
+  font-size: 20px;
   float: right;
   text-align: right;
   text-decoration: none;
   padding-right: 50px;
   padding-top: 5px;
 }
-/* form-login.balde.php */
+.aLogin a:hover{
+  color: black;
+}
 .formLogin{
   margin-left: 40%;
-  margin-top: -168px;
-  padding: 5px;
-  /* position: fixed; */
-  /* background-color: red; */
-  padding-bottom: 30%;
 }
 .footer{
   text-align: center;
-  /* margin-top: 20%; */
 }

@@ -13,6 +13,7 @@ let Crud = function (){
                                 +'<td>'+professor['Nome']+'</td>'
                                 +'<td>'+'<button onclick = crud.show('+id+')>Mostrar</button>'+'</td>'
                                 +'<td>'+'<button onclick = crud.edit('+id+')>Alterar</button>'+'</td>'
+                                +'<td>'+'<button onclick = crud.delete('+id+')>Excluir</button>'+'</td>'
                                 +'</tr>'
                 }
                 // tabela += '</table>'
@@ -74,10 +75,26 @@ let Crud = function (){
             url    : '{{ url("api/professor")}}'+'/'+id,
             method : 'POST',
             data   : data, 
-            action: function(response){
+            action : function(response){
                 alert(response['mensagem'])
             },
             erro : function(erro){
+                console.log(erro)
+            }
+        })
+    }
+    this.delete = function(id){
+        let data = new FormData()
+        data.delete('_token', '{{ csrf_token() }}')
+        data.delete('_method', 'DELETE')
+        ajax({
+            url    : '{{ url("api/professor")}}'+'/'+id,
+            method : 'POST',
+            data   : data,
+            action : function(response){
+                alert(response['mensagem'])
+            },
+            erro   : function(erro){
                 console.log(erro)
             }
         })
