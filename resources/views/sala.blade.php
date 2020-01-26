@@ -1,7 +1,7 @@
     @include('cabecalho-master')
     @include('menu-login')
     @include('menu-lateral')
-    <p class="encapsulamento">
+    <p>
     Saúde
     Clínica
     Medicina

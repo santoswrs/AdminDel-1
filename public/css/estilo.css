@@ -1,29 +1,56 @@
+p,
+h2{
+  text-align: justify;
+  padding: 0 5px 0 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+h2{
+  padding: 0 15px 0 15px;
+}
+span{
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+}
+.formatarHome
+{
+  text-align: center;
+  line-height: 1.9;
+}
+#span{
+  color: red;
+  background-color: lime;
+}
 .formatosi{
+  margin: 1px;
+  padding: 1px;
   background-color: #ECF0F5;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
 .insertImagem{
-  background-image: url('EEufs.jpg');
+  background-image: url('../img/EEufs.jpg');
   background-repeat: round;
   background-size: 100%;
   width: 1150px;
-  height: 168px;
+  height: 170px;
   float: right;
   position: relative;
-  margin-top: -168px;
-  margin-right: -6px;
+  margin-top: -170px;
+  /* margin-right: -6px; */
 }
 .fixador{
   display: block;
 }
-.encapsulamento{
-  text-align: justify; /*tudo que esta dentro do body*/
-}
+/* .encapsulamento{
+  text-align: justify; /*tudo que esta dentro do body
+} */
 
 .vertical-menu {
-    width: 200px; /* comprimento da barra azul */
+    width: 215px; /* comprimento da barra azul */
 }
   
 .vertical-menu a {
@@ -46,9 +73,9 @@
 .headerEntr {
     float: center;
     background-color: #3C8DBC;
-    width: 100%;
+    width: 98%;
     height: 30px;
-    margin: 2px 0 2px 0;
+    margin: 1px 0 1px 0;
     padding: 1%;
 }
 .aLogin a{ /* Menu login superior */
@@ -63,7 +90,7 @@
 .aLogin a:hover{
   color: black;
 }
-.formLogin{
+.formLogin{ /* login email */
   margin-left: 40%;
 }
 .footer{
