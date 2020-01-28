@@ -42,6 +42,10 @@ class Controller extends BaseController
     public function sala(){
         return view('sala');
     }
+    
+    public function sobre(){
+        return view('sobre');
+    }
     public function usuario(){
         $nome       = $_GET['nome'];
         $endereco   = $_GET['endereco'];

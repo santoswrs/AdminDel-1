@@ -12,11 +12,18 @@
 */
 Route::get('home',['uses' => 'Controller@homepage']);
 
-Route::get('/login',['uses' => 'Controller@login']);
+Route::get('login',['uses' => 'Controller@login']);
 
+//Rotas de laboratorio
 Route::get('labs',['uses' => 'Controller@labs']);
+// Route::get('labs',['uses' => 'Controller@labs']);
 
 Route::get('sala',['uses' => 'Controller@sala']);
+
+
+Route::get('sobre',['uses' => 'Controller@sobre']);
+
+
 Route::group(['prefix' =>'/'], function(){
     Route::group(['prefix' => '/api'], function(){
         Route::get      ('professor',       'Api\\ProfessorApiController@all');
